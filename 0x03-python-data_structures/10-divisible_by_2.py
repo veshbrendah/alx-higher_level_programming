@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
-    if my_list:
-        max = my_list[0]
-        for elm in my_list:
-            if elm > max:
-                max = elm
-        return max
-    return None
+
+
+def divisible_by_2(my_list=[]):
+    """Finds all multiples of 2 in a list"""
+    new_list = []
+    for i in my_list:
+        if i % 2 == 0:
+            new_list.append(True)
+        else:
+            new_list.append(False)
+    return new_list
